@@ -1,0 +1,14 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(input().split())
+    temp=0
+    for x in a:
+        if x=="cookie":
+            temp+=1
+        elif (x=="milk")&(temp<=1):
+            temp=0
+    if temp==0:
+        print("YES")
+    else :
+        print("NO")
